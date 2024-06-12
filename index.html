@@ -109,7 +109,7 @@
                 </ul>
               </li>
               <!-- Quinto item del menú desplegable -->
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ocultar">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Comunidad </a>
                 <!-- Menú de opciones Comunidad -->
                 <ul class="dropdown-menu">
@@ -119,7 +119,7 @@
                 </ul>
               </li>
               <!-- Sexto item del menú desplegable -->
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ocultar">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Soporte Técnico </a>
                 <!-- Menú de opciones Soporte técnico -->
                 <ul class="dropdown-menu">
@@ -131,7 +131,7 @@
                 </ul>
               </li>
               <!-- Septimo item del menú desplegable -->
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ocultar">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Mi Xbox </a>
                 <!-- Menú de opciones Mi Xbox -->
                 <ul class="dropdown-menu">
@@ -158,17 +158,17 @@
               </li>
             </ul>
           </div>
-          <a href="#">
-            <i class="bi bi-search"></i>
-          </a>
-          <a href="#">
-            <i class="bi bi-cart3"></i>
-          </a>
-          <div class="containerUserRoundImg">
-            <div class="userRoundImg"></div>
-          </div>
         </div>
       </nav>
+      <a href="#">
+        <i class="bi bi-search"></i>
+      </a>
+      <a href="#">
+        <i class="bi bi-cart3"></i>
+      </a>
+      <div class="containerUserRoundImg">
+        <div class="userRoundImg"></div>
+      </div>
     </header>
     <section>
       <!-- Carrousel -->
@@ -205,66 +205,111 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- Grid de datos -->
-      <div class="container text-center">
-        <ul class="ul-menu">
-          <li class="li-menu">
-            <a href="#"
-              ><img
-                class="smallImage"
-                src="https://assets.xboxservices.com/assets/37/ec/37ec5a7a-08b4-466f-93e3-81fb5dd0b471.svg?n=Homepage-FY20_Home-Icons-0_XGP_72x56-01.svg"
-              />
-              <p class="text-menu">GAME PASS</p></a
-            >
-          </li>
-          <li class="li-menu">
-            <a href="#"
-              ><img
-                class="smallImage"
-                src="https://assets.xboxservices.com/assets/e2/a8/e2a830ea-71e7-42fa-af94-7a07d66f150e.svg?n=Homepage-FY20_Home-Icons-0_Games_72x56-01.svg"
-              />
-              <p class="text-menu">JUEGOS</p></a
-            >
-          </li>
-          <li class="li-menu">
-            <a href="#"
-              ><img
-                class="smallImage"
-                src="https://assets.xboxservices.com/assets/12/74/12744081-03f9-42a4-87be-e869ddce3327.svg?n=Homepage-FY20_Home-Icons-0_Consoles_72x56-02.svg"
-              />
-              <p class="text-menu">CONSOLAS</p></a
-            >
-          </li>
-          <li class="li-menu">
-            <a href="#"
-              ><img
-                class="smallImage"
-                src="https://assets.xboxservices.com/assets/29/ff/29ffa9b2-2d48-433b-abb7-99229bcbaa8b.svg?n=Homepage-FY20_Home-Icons-0_Accessories_72x56-01.svg"
-              />
-              <p class="text-menu">ACCESORIOS</p></a
-            >
-          </li>
-          <li class="li-menu">
-            <a href="#"
-              ><img
-                class="smallImage"
-                src="https://assets.xboxservices.com/assets/50/9a/509a35c3-472d-46ed-b29d-2f47adca7be9.svg?n=Homepage-FY20_Home-Icons-0_Deals_72x56-01.svg"
-              />
-              <p class="text-menu">OFERTAS</p></a
-            >
-          </li>
-          <li class="li-menu">
-            <a href="#"
-              ><img
-                class="smallImage"
-                src="https://assets.xboxservices.com/assets/30/ab/30abec76-ab4c-4275-b0ca-725a6eb2f85f.svg?n=Homepage-FY20_Home-Icons-0_Sign-In_72x56-01.svg"
-              />
-              <p class="text-menu">MY ACCOUNT</p></a
-            >
-          </li>
-        </ul>
-      </div>
     </section>
+    <!-- Grid de datos -->
+    <div class="container text-center">
+      <ul class="ul-menu">
+        <li class="li-menu">
+          <a href="#"
+            ><img
+              class="smallImage"
+              src="https://assets.xboxservices.com/assets/37/ec/37ec5a7a-08b4-466f-93e3-81fb5dd0b471.svg?n=Homepage-FY20_Home-Icons-0_XGP_72x56-01.svg"
+            />
+            <p class="text-menu" id="cambioTexto">GAME PASS</p></a
+          >
+        </li>
+        <li class="li-menu">
+          <a href="#"
+            ><img
+              class="smallImage"
+              src="https://assets.xboxservices.com/assets/e2/a8/e2a830ea-71e7-42fa-af94-7a07d66f150e.svg?n=Homepage-FY20_Home-Icons-0_Games_72x56-01.svg"
+            />
+            <p class="text-menu">JUEGOS</p></a
+          >
+        </li>
+        <li class="li-menu">
+          <a href="#"
+            ><img
+              class="smallImage"
+              src="https://assets.xboxservices.com/assets/12/74/12744081-03f9-42a4-87be-e869ddce3327.svg?n=Homepage-FY20_Home-Icons-0_Consoles_72x56-02.svg"
+            />
+            <p class="text-menu">CONSOLAS</p></a
+          >
+        </li>
+        <li class="li-menu">
+          <a href="#"
+            ><img
+              class="smallImage"
+              src="https://assets.xboxservices.com/assets/29/ff/29ffa9b2-2d48-433b-abb7-99229bcbaa8b.svg?n=Homepage-FY20_Home-Icons-0_Accessories_72x56-01.svg"
+            />
+            <p class="text-menu">ACCESORIOS</p></a
+          >
+        </li>
+        <li class="li-menu">
+          <a href="#"
+            ><img
+              class="smallImage"
+              src="https://assets.xboxservices.com/assets/50/9a/509a35c3-472d-46ed-b29d-2f47adca7be9.svg?n=Homepage-FY20_Home-Icons-0_Deals_72x56-01.svg"
+            />
+            <p class="text-menu">OFERTAS</p></a
+          >
+        </li>
+        <li class="li-menu">
+          <a href="#"
+            ><img
+              class="smallImage"
+              src="https://assets.xboxservices.com/assets/30/ab/30abec76-ab4c-4275-b0ca-725a6eb2f85f.svg?n=Homepage-FY20_Home-Icons-0_Sign-In_72x56-01.svg"
+            />
+            <p class="text-menu">MY ACCOUNT</p></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Lista ul modificable -->
+    <div class="lista pt-3 pb-3">
+      <ul id="ulDiv"></ul>
+      <button id="crearLi">Agregar</button>
+    </div>
+    <!-- Togle para mostrar/ocultar una imagen -->
+    <div class="togle-div">
+      <button id="mostrarOcultar">Ocultar</button>
+      <img
+        id="imgMostrarOcultar"
+        src="https://m.media-amazon.com/images/S/pv-target-images/0de40bcc677f0e957765b7364f3de927e586b0989376f0144e6f35bcb28ebfcc.jpg"
+        alt="Imagen con texto de te veo"
+        width="400px"
+      />
+    </div>
+    <!-- Mover objetos -->
+    <div class="area-juego" id="area-juego">
+      <div id="jugador" class="jugador">
+
+      </div>
+    </div>
+    <!-- Carrousel -->
+    <div class="d-flex flex-column align-items-center mt-2 mb-2">
+      <div class="carrousel" id="carrousel">
+        <img src="https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg" class="active" />
+        <img
+          src="https://img.freepik.com/foto-gratis/colores-arremolinados-interactuan-danza-fluida-sobre-lienzo-que-muestra-tonos-vibrantes-patrones-dinamicos-que-capturan-caos-belleza-arte-abstracto_157027-2892.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1718150400&semt=ais_user"
+        />
+        <img src="https://media.es.wired.com/photos/6501e7429fa9000811a95fe8/16:9/w_2560%2Cc_limit/Adobe%2520Firefly.jpeg" />
+        <div class="carrousel-buttons">
+          <button id="prevBtn">Anterior</button>
+          <button id="nextBtn">Siguiente</button>
+        </div>
+        <div class="carrousel-indicators" id="indicators">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="carrousel-controls">
+        <span class="btn-play-pause" id="pauseBtn">Pausar</span>
+        <span class="btn-play-pause" id="resumeBtn" style="display: none">Reanudar</span>
+      </div>
+    </div>
+
     <div class="parent">
       <div class="div1">
         <div class="fondo-verde">
@@ -278,7 +323,7 @@
         </div>
       </div>
       <div class="div2">
-        <div class="fondo-verde">
+        <div class="fondo-verde" id="fondoVerde">
           <section>
             <div class="item-info">
               <h2 class="encabezado texto-blanco">Descubre tu siguiente juego favorito</h2>
@@ -352,7 +397,7 @@
       </div>
     </div>
     <section class="mt-1 mb-1">
-      <picture>
+      <picture class="img-gigante">
         <img
           src="https://assets.xboxservices.com/assets/07/f8/07f8ac5b-5483-42ce-8cde-895bbea04af3.jpg?n=Hellblade-II_Home-Hero-1084_Console-Campaign_1904x805_01.jpg"
           alt="Carátula de Senua's Saga: Hellblade II"
@@ -444,7 +489,8 @@
             </section>
             <img
               class="img-pequeña"
-              src="https://assets.xboxservices.com/assets/4f/16/4f166d86-6792-49b9-baf2-e70c0b505260.jpg?n=0001222444_Small-tout-1084_475x534.jpg" alt="Logotipo de Gears of War: E-Day."
+              src="https://assets.xboxservices.com/assets/4f/16/4f166d86-6792-49b9-baf2-e70c0b505260.jpg?n=0001222444_Small-tout-1084_475x534.jpg"
+              alt="Logotipo de Gears of War: E-Day."
               alt="Yasuke y Naoe, de pie, delante de un Torii rodeado de banners en pedazos, sostienen sus armas cercas al cuerpo."
             />
           </div>
@@ -489,5 +535,6 @@
         </div>
       </section>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
