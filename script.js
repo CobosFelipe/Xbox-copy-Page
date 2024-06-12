@@ -30,6 +30,13 @@ function restaurarColor() {
   fondoVerde.style.backgroundColor = "#107c10";
 }
 
+function fuentes() {
+  const parrafo = document.getElementById("parrafoCambio");
+  const fuente = document.getElementById("selectorFuente");
+  const fuenteSeleccionada = fuente.value;
+  parrafo.style.fontFamily = fuenteSeleccionada;
+}
+
 // Tercer punto
 function crearLi() {
   let liText = prompt("Ingrese una tarea");

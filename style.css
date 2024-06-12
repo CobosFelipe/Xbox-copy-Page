@@ -74,6 +74,15 @@ button{
   height: 2rem;
 }
 
+/* Estilos del parrafo */
+.parrafo{
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
 /* Estilos para la cuadrilla de arriba*/
 .parent {
   display: grid;
@@ -241,8 +250,8 @@ button{
 /* Estilos del carrousel */
 .carrousel {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 98vw;
+  /* height: 700px; */
   overflow: hidden;
 }
 
