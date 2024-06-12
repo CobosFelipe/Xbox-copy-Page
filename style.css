@@ -221,6 +221,17 @@ button{
   margin: 1rem;
 }
 
+.parrafosFuentes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.selectorFuente{
+  display: none;
+}
+
 /* Estilos para mover el div */
 .area-juego{
   display: flex;

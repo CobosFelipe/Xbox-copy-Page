@@ -1,6 +1,8 @@
 // Traer elementos del DOM
 const cambioTexto = document.getElementById("cambioTexto");
 const fondoVerde = document.getElementById("fondoVerde");
+const parrafo = document.getElementById("parrafoCambio");
+const fuente = document.getElementById("selectorFuente");
 const ulDiv = document.getElementById("ulDiv");
 const nuevoLi = document.getElementById("crearLi");
 const mostrarOcultar = document.getElementById("mostrarOcultar");
@@ -31,10 +33,9 @@ function restaurarColor() {
 }
 
 function fuentes() {
-  const parrafo = document.getElementById("parrafoCambio");
-  const fuente = document.getElementById("selectorFuente");
   const fuenteSeleccionada = fuente.value;
   parrafo.style.fontFamily = fuenteSeleccionada;
+  fuente.style.display = "none";
 }
 
 // Tercer punto
@@ -151,6 +152,21 @@ fondoVerde.addEventListener("mouseover", function () {
 
 fondoVerde.addEventListener("mouseout", function () {
   restaurarColor();
+});
+
+parrafo.addEventListener("click", function () {
+  fuente.style.display = "inline-block";
+});
+
+fuente.addEventListener('change', function(){
+  fuentes();
+})
+
+// Evento listener para ocultar el selector al hacer click fuera del parrafo
+document.addEventListener("click", function (event) {
+  if (!parrafo.contains(event.target) && !fuente.contains(event.target)) {
+    fuente.style.display = "none";
+  }
 });
 
 // Tercer punto
